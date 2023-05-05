@@ -1,4 +1,36 @@
+
+
+<script>
+    function setRem() {
+        // 当前页面宽度相对于 750 宽的缩放比例，可根据自己需要修改
+        const scale = document.documentElement.clientWidth / 750;
+        document.documentElement.style.fontSize = scale + 'px';
+    }
+    setRem();
+    window.onresize = setRem;
+</script>
+
 <html>
+  <header>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .w-550px {
+        width: 550rem;
+        height: 100px;
+        background-color: rgb(209, 255, 240);
+    }
+    .full {
+        width: 750rem;
+        height: 100px;
+        background-color: rgb(195, 200, 199);
+    }
+</style>
+</header>
 <div>Hello 番茄待办</div>
   <a href="https://www.baidu.com">链接</a>
 </html>
